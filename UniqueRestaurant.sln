@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqueRestaurant", "UniqueRestaurant.csproj", "{3ADAD5C1-93F0-4DA8-9ED4-CF60A1F8E83E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3ADAD5C1-93F0-4DA8-9ED4-CF60A1F8E83E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ADAD5C1-93F0-4DA8-9ED4-CF60A1F8E83E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ADAD5C1-93F0-4DA8-9ED4-CF60A1F8E83E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ADAD5C1-93F0-4DA8-9ED4-CF60A1F8E83E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

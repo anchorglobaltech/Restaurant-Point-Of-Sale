@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3ADAD5C1-93F0-4DA8-9ED4-CF60A1F8E83E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniqueRestaurant</RootNamespace>
+    <AssemblyName>UniqueRestaurant</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuditTrail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditTrail.designer.cs">
+      <DependentUpon>AuditTrail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bankdet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bankdet.designer.cs">
+      <DependentUpon>Bankdet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cashierreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cashierreport.designer.cs">
+      <DependentUpon>cashierreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Changepassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changepassword.designer.cs">
+      <DependentUpon>Changepassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet3.cs">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditQty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditQty.Designer.cs">
+      <DependentUpon>EditQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncDec.cs" />
+    <Compile Include="Expenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expenses.designer.cs">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExReport.designer.cs">
+      <DependentUpon>ExReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminMenu.designer.cs">
+      <DependentUpon>FrmAdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmcategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcategory.Designer.cs">
+      <DependentUpon>Frmcategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCriticalUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCriticalUpdate.designer.cs">
+      <DependentUpon>frmCriticalUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmlogin.Designer.cs">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageUser.designer.cs">
+      <DependentUpon>frmManageUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecordCashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecordCashier.designer.cs">
+      <DependentUpon>frmRecordCashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecordSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecordSales.designer.cs">
+      <DependentUpon>frmRecordSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmstart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmstart.designer.cs">
+      <DependentUpon>Frmstart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateStock.Designer.cs">
+      <DependentUpon>FrmUpdateStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginTrail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginTrail.designer.cs">
+      <DependentUpon>LoginTrail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerMenu.Designer.cs">
+      <DependentUpon>ManagerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mycategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mycategory.Designer.cs">
+      <DependentUpon>mycategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintService.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReprintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReprintForm.designer.cs">
+      <DependentUpon>ReprintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockRecords.Designer.cs">
+      <DependentUpon>StockRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniquekitchenDataSet.cs">
+      <DependentUpon>UniquekitchenDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UniquekitchenDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UniquekitchenDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditTrail.resx">
+      <DependentUpon>AuditTrail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bankdet.resx">
+      <DependentUpon>Bankdet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cashierreport.resx">
+      <DependentUpon>cashierreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Changepassword.resx">
+      <DependentUpon>Changepassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditQty.resx">
+      <DependentUpon>EditQty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expenses.resx">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExReport.resx">
+      <DependentUpon>ExReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminMenu.resx">
+      <DependentUpon>FrmAdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcategory.resx">
+      <DependentUpon>Frmcategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCriticalUpdate.resx">
+      <DependentUpon>frmCriticalUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmlogin.resx">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageUser.resx">
+      <DependentUpon>frmManageUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecordCashier.resx">
+      <DependentUpon>frmRecordCashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecordSales.resx">
+      <DependentUpon>frmRecordSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmstart.resx">
+      <DependentUpon>Frmstart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateStock.resx">
+      <DependentUpon>FrmUpdateStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginTrail.resx">
+      <DependentUpon>LoginTrail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerMenu.resx">
+      <DependentUpon>ManagerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mycategory.resx">
+      <DependentUpon>mycategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="ReprintForm.resx">
+      <DependentUpon>ReprintForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockRecords.resx">
+      <DependentUpon>StockRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="UniquekitchenDataSet.xsc">
+      <DependentUpon>UniquekitchenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UniquekitchenDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UniquekitchenDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UniquekitchenDataSet.xss">
+      <DependentUpon>UniquekitchenDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unique.jpg" />
+    <None Include="Resources\bloggif_60c267a0d76c0.gif" />
+    <None Include="Resources\06915b6a2ea976f5fb450f76a0786ce0.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\food.jpg" />
+    <None Include="Resources\image.png" />
+    <Content Include="Resources\logout.png" />
+    <Content Include="Resources\password.png" />
+    <Content Include="Resources\penal.jpg" />
+    <None Include="Resources\people-restaurant-eating-dinner-vector-flat-concepts_53562-3753.jpg" />
+    <None Include="Resources\people-sitting-at-the-table-of-the-restaurant-vector-7850299.jpg" />
+    <None Include="Resources\people-sitting-at-the-table-of-the-restaurant-vector-78502991.jpg" />
+    <Content Include="Resources\personal.png" />
+    <None Include="Resources\picasion.com_gDQT.gif" />
+    <None Include="Resources\pointer-righta.png" />
+    <Content Include="Resources\registration_icon_up.png" />
+    <Content Include="Resources\Save.png" />
+    <Content Include="Resources\technic6.png" />
+    <Content Include="Resources\todo.png" />
+    <None Include="Resources\btnSettle.Image.jpg" />
+    <Content Include="Resources\conversation1.png" />
+    <Content Include="Resources\images %2832%29.jpeg" />
+    <Content Include="Resources\images %2833%29.jpeg" />
+    <Content Include="Resources\images %2834%29.jpeg" />
+    <Content Include="Resources\images %2835%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
