@@ -9,5 +9,4 @@ Restaurant Point of Sale (POS) System is basically a management system for restu
 ![cashier records](https://user-images.githubusercontent.com/36297289/219260429-be2de345-2960-4406-b186-ecf9b4136da8.PNG)
 
 ![Uploading SalesRep
-![ViewstockREcords](https://user-images.githubusercontent.com/36297289/219260527-49ee7e2f-c288-491a-9e21-ad8ba65884cb.PNG)
-ortPage.PNG…]()
+
